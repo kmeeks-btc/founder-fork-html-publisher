@@ -1,0 +1,84 @@
+<!-- meta: group=other; title=BTC Gated Test; date=2026-07 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BTC Gated Test</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F6F7F9;
+    --primary: #16181D;
+    --body-text: #525A66;
+    --cyan: #2F6FEB;
+    --purple: #7B4BD8;
+    --gradient: linear-gradient(90deg, #2F6FEB, #7B4BD8);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--primary);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .card {
+    max-width: 520px;
+    width: 100%;
+    background: white;
+    border: 1px solid rgba(13,31,45,0.08);
+    border-radius: 14px;
+    padding: 40px 36px;
+    box-shadow: 0 2px 20px rgba(13,31,45,0.06);
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--purple);
+    background: rgba(123,75,216,0.08);
+    border: 1px solid rgba(123,75,216,0.22);
+    border-radius: 20px;
+    padding: 4px 12px;
+    margin-bottom: 18px;
+  }
+  .lock { font-size: 11px; }
+  h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin-bottom: 12px;
+  }
+  p { color: var(--body-text); font-size: 15px; margin-bottom: 8px; }
+  .slug {
+    margin-top: 24px;
+    font-family: monospace;
+    font-size: 12px;
+    color: var(--body-text);
+    opacity: 0.7;
+  }
+  .bar { width: 28px; height: 3px; background: var(--gradient); border-radius: 2px; margin-bottom: 20px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="bar"></div>
+    <span class="badge"><span class="lock">&#128274;</span>&nbsp;Gate passed</span>
+    <h1>BTC Gated Test</h1>
+    <p>If you're reading this, you got past the username/password prompt for this document.</p>
+    <p>This confirms the password-protected publishing path is working end to end.</p>
+    <div class="slug">proposals/btc-gated-test-0726.html</div>
+  </div>
+</body>
+</html>
